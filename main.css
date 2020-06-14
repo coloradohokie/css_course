@@ -3,9 +3,15 @@
 #product-overview {
     background: url("pinup.jpg");
     width: 100%;
-    height: 500px;
+    height: 528px;
     padding: 10px;
+    position: relative;
+}
 
+.slogan {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 .section-title {
