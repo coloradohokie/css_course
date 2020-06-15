@@ -1,7 +1,16 @@
 
 
 #product-overview {
-    background: url("pinup.jpg");
+    background: 
+        linear-gradient(to top, rgba(80, 68,18, 0.6) 10%, transparent), 
+        url("./images/pinup.jpg") left 0% top 10%/cover no-repeat border-box, 
+        #ff1b68;
+    /* background-image: url("pinup.jpg");
+    background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 0% 10%; */
+    /* background-origin: border-box;
+    background-clip: border-box; */
     width: 100%;
     height: 528px;
     padding: 10px;
@@ -129,6 +138,7 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 
