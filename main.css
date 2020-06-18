@@ -3,7 +3,7 @@
 #product-overview {
     background: 
         linear-gradient(to top, rgba(80, 68,18, 0.6) 10%, transparent), 
-        url("./images/pinup.jpg") left 0% top 10%/cover no-repeat border-box, 
+        url("./images/pinup.jpg") left 0% top 25%/cover no-repeat border-box, 
         #ff1b68;
     /* background-image: url("pinup.jpg");
     background-size: cover; */
@@ -12,7 +12,7 @@
     /* background-origin: border-box;
     background-clip: border-box; */
     width: 100%;
-    height: 528px;
+    height: 33vh;
     position: relative;
     margin-top: 2.75rem;
 }
