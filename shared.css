@@ -27,7 +27,7 @@ main {
     width: 100%;
     position: fixed;
     background-color: #2ddf5c;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
     display: inline-block;
     z-index: 1;
     top: 0;
@@ -157,7 +157,6 @@ main {
     color: #ccc;
 }
 
-
 .button {
     background: #0e4f1f;
     color: white;
@@ -180,6 +179,13 @@ main {
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    border: #aaa;
+    background: #ccc;
+    color: #aaa;
+
+}
 
 
 .mobile-nav {
