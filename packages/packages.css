@@ -21,6 +21,7 @@ main {
     border-left: none;
     margin: 1rem 0;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -42,12 +43,16 @@ main {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin: 1.25rem;
+    margin: 0rem;
     font-size: 0.75rem;
     color: white;
     background: #ff5454;
     padding: 0.5rem;
-    border-radius: 0.3rem;
+    transform: rotate(45deg) translateX(3.5rem) translateY(-1rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+
 }
 .package__title {
     color: black;
