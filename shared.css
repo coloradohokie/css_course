@@ -21,12 +21,14 @@ body {
 .backdrop {
     position: fixed;
     display: none;
+    opacity: 0;
     z-index: 100;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+    transition: opacity 0.2s linear;
 }
 
 main {
@@ -41,7 +43,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
 }
@@ -90,6 +92,7 @@ main {
 
 .main-nav__item--cta {
     display: inline-block;
+    animation: wiggle 400ms 3s 8 none;
 }
 
 .main-nav__item > a,
@@ -193,7 +196,6 @@ main {
 
 
 .mobile-nav {
-    display: none;
     position: fixed;
     z-index: 101;
     top: 0;
@@ -201,8 +203,10 @@ main {
     background: white;
     width: 80%;
     height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
-  
+
 .mobile-nav__items {
     width: 90%;
     height: 100%;
@@ -226,6 +230,8 @@ main {
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 
@@ -252,5 +258,19 @@ main {
 
     .main-footer__link {
         margin: 0 1rem;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(-3deg)
+    }
+
+    100% {
+        transform: rotateZ(3deg);
     }
 }
