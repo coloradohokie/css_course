@@ -75,9 +75,10 @@
     color: hsl(0, 70%, 50%);
     font-family: 'Anton', sans-serif;
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    font-size: 1rem;
+    top: 5%;
+    left: 3%;
+    font-size: 1.6rem;
+    width: 7rem;
 }
 
 @media (min-width: 40rem) {
@@ -87,7 +88,9 @@
     }
 
     #product-overview h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        width: 14rem;
+        top: 5%
     }
 
     .plan__list {
